@@ -10,8 +10,10 @@ TARGET = ST_Lab1_server
 TEMPLATE = app
 
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    controler.cpp
 
-HEADERS  +=
+HEADERS  += \
+    controler.h
 
 FORMS    +=
