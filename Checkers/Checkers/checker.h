@@ -17,7 +17,7 @@ private:
 	/** Дамка?*/
 	bool king;
 public:
-	explicit Checker(QObject *parent = 0);
+	explicit Checker(CheckerState position, QObject *parent = 0);
 
 	/** Получить позицию шашки*/
 	CheckerState GetPosition() const;
@@ -28,10 +28,10 @@ signals:
 
 public slots:
 	/** Задать позицию шашки.*/
-	void SetPosition(CheckerState Position);
+	void SetPosition(CheckerState position);
 
 	/** Задать является ли дамкой.*/
-	void SetKing(bool King);
+	void SetKing(bool king);
 };
 
 #endif // CHECKER_H

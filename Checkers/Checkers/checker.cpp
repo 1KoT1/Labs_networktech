@@ -1,7 +1,7 @@
 #include "checker.h"
 
-Checker::Checker(QObject *parent) :
-	QObject(parent), position(None), king(false)
+Checker::Checker(CheckerState p, QObject *parent) :
+	QObject(parent), position(p), king(false)
 {
 }
 
