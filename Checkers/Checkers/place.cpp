@@ -1,4 +1,5 @@
 #include "place.h"
+#include "checker.h"
 
 Place::Place(QObject *parent) :
 	QObject(parent), white(QVector(12)), black(QVector(12))
