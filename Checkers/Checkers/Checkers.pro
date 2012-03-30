@@ -26,7 +26,8 @@ symbian:TARGET.CAPABILITY += NetworkServices
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
     checker.cpp \
-    place.cpp
+    place.cpp \
+    game.cpp
 
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
@@ -35,4 +36,5 @@ qtcAddDeployment()
 HEADERS += \
     checkestate.h \
     checker.h \
-    place.h
+    place.h \
+    game.h
