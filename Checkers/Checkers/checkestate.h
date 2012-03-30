@@ -3,7 +3,7 @@
 
 /** Положение шашки на доске
 	*/
-enum СheckerState{
+enum CheckerState{
 	A1,
 	A3,
 	A5,
