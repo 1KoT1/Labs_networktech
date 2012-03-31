@@ -1,3 +1,4 @@
+QT += network
 # Add more folders to ship with the application, here
 folder_01.source = qml/Checkers
 folder_01.target = qml
@@ -25,20 +26,22 @@ symbian:TARGET.CAPABILITY += NetworkServices
 
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
-    checker.cpp \
-    place.cpp \
-    game.cpp \
-    clientgame.cpp \
-    channeltoserver.cpp
+		checker.cpp \
+		place.cpp \
+		game.cpp \
+		clientgame.cpp \
+		channeltoserver.cpp \
+    maincontroller.cpp
 
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    checkestate.h \
-    checker.h \
-    place.h \
-    game.h \
-    clientgame.h \
-    channeltoserver.h
+		checkestate.h \
+		checker.h \
+		place.h \
+		game.h \
+		clientgame.h \
+		channeltoserver.h \
+    maincontroller.h
