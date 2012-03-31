@@ -31,7 +31,7 @@ public slots:
 	void FailureMove();
 
 	/** Изменение позиции.*/
-	void ChangePlace(Place);
+	void ChangePlace(Place *);
 
 	/** Отказ от игры первым игроком.*/
 	void EndOfTheGame1();
@@ -43,7 +43,7 @@ public slots:
 	 *
 	 * Высылает сигнал со списком возможных позиций.
 	 */
-	void PossibleMove(CheckerState);
+	void PossibleMove(CheckerState &);
 };
 
 #endif // CLIENTGAME_H

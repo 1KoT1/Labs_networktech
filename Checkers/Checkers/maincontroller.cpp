@@ -6,11 +6,11 @@ MainController::MainController(QObject *parent) :
 	QObject(parent), game(0), clienGame(0){}
 
 /** Начать игру как сервер.*/
-void StartServer(){
+void MainController::StartServer(){
 
 }
 
 /** Начать игру как клиент.*/
-void ConnectToServer(QString){
+void MainController::ConnectToServer(QString){
 
 }

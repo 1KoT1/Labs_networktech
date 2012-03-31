@@ -1,5 +1,4 @@
 #include "place.h"
-#include "checker.h"
 #include "checkestate.h"
 
 Place::Place(QObject *parent) :

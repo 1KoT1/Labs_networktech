@@ -13,7 +13,7 @@ void ClientGame::FailureMove(){
 }
 
 /** Изменение позиции.*/
-void ClientGame::ChangePlace(Place){
+void ClientGame::ChangePlace(Place *){
 
 }
 
@@ -31,6 +31,6 @@ void ClientGame::EndOfTheGame2(){
  *
  * Высылает сигнал со списком возможных позиций.
  */
-void ClientGame::PossibleMove(CheckerState){
+void ClientGame::PossibleMove(CheckerState &){
 
 }

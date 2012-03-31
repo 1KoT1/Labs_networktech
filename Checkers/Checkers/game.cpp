@@ -14,12 +14,12 @@ void Game::BeginOfGame(){
 }
 
 /** Перемещение шашки первым игроком.*/
-void Game::Move1(CheckerState & from, CheckerState & to){
+void Game::Move1(CheckerState & /*from*/, CheckerState & /*to*/){
 
 }
 
 /** Перемещение шашки вторым игроком.*/
-void Game::Move2(CheckerState & from, CheckerState & to){
+void Game::Move2(CheckerState & /*from*/, CheckerState & /*to*/){
 
 }
 
@@ -43,12 +43,13 @@ void Game::PossibleMove(CheckerState & ){
 
 /** Получить указатель на шашку по позиции. */
 Checker * Game::getCeckerByPosition(CheckerState & ){
-
+	return new Checker();
 }
 
 /** Возможные ходы. */
 QVector<CheckerState> & Game::possibleMove(Checker & ){
-
+	QVector<CheckerState> * t = new QVector<CheckerState>();
+	return *t;
 }
 
 /** переместить указанную шашку */
