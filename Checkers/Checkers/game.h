@@ -32,10 +32,10 @@ public slots:
 	void BeginOfGame();
 
 	/** Перемещение шашки первым игроком.*/
-	void Move1(CheckerState from, CheckerState to);
+	void Move1(CheckerState & from, CheckerState & to);
 
 	/** Перемещение шашки вторым игроком.*/
-	void Move2(CheckerState from, CheckerState to);
+	void Move2(CheckerState & from, CheckerState & to);
 
 	/** Здаётся первый игрок. */
 	void EndOfGame1();
@@ -47,17 +47,17 @@ public slots:
 	 *
 	 * Высылает сигнал с возможными ходами.
 	 */
-	void PossibleMove(CheckerState) const;
+	void PossibleMove(CheckerState & ) /*const*/;
 
 private:
 	/** Получить указатель на шашку по позиции. */
-	Checker * getCeckerByPosition(CheckerState) const;
+	Checker * getCeckerByPosition(CheckerState & ) /*const*/;
 
 	/** Возможные ходы. */
-	QVector<CheckerState> & possibleMove(Checker) const;
+	QVector<CheckerState> & possibleMove(Checker & ) /*const*/;
 
 	/** переместить указанную шашку */
-	void move(Checker, CheckerState);
+	void move(Checker & , CheckerState & );
 };
 
 #endif // GAME_H

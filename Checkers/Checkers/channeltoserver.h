@@ -2,8 +2,8 @@
 #define CHANNELTOSERVER_H
 
 #include <QObject>
+#include "checkestate.h"
 
-class CheckerState;
 class QAbstractSocket;
 
 /** Канал связи с сервером.

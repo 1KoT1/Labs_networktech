@@ -2,9 +2,9 @@
 #define CLIENTGAME_H
 
 #include <QObject>
+#include "checkestate.h"
 
 class ChannelToServer;
-class CheckerState;
 class Place;
 
 /** Игра на стороне клиента

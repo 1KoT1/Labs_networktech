@@ -9,7 +9,6 @@
  */
 class Checker
 {
-	Q_OBJECT
 private:
 	/** Позиция шашки*/
 	CheckerState position;
@@ -25,9 +24,9 @@ public:
 
 	/** Является ли дамкой?*/
 	bool IsKing() const;
-signals:
+//signals:
 
-public slots:
+public /*slots*/:
 	/** Задать позицию шашки.*/
 	void SetPosition(CheckerState position);
 
