@@ -1,10 +1,7 @@
 #include "checker.h"
 
-Checker::Checker(CheckerState p) :
-	position(p), king(false){}
-
-Checker::Checker() :
-	position(None), king(false){}
+Checker::Checker(CheckerState p, QObject * parent) :
+	QObject(parent), position(p), king(false){}
 
 CheckerState Checker::GetPosition() const{
 	return position;

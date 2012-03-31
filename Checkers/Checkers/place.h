@@ -14,10 +14,10 @@ class Place : public QObject
 	Q_OBJECT
 private:
 	/** Белые шашки.*/
-	QVector<Checker> white;
+	QVector<Checker *> white;
 
 	/** Чёрные шашки.*/
-	QVector<Checker> black;
+	QVector<Checker *> black;
 public:
 	explicit Place(QObject *parent = 0);
 

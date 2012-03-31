@@ -1,32 +1,33 @@
 #include "place.h"
 #include "checkestate.h"
+#include "checker.h"
 
 Place::Place(QObject *parent) :
-	QObject(parent), white(QVector<Checker>(10)),
-	black(QVector<Checker>(10))
+	QObject(parent), white(QVector<Checker*>(10)),
+	black(QVector<Checker*>(10))
 {
-	white.append(Checker(A1));
-	white.append(Checker(C1));
-	white.append(Checker(E1));
-	white.append(Checker(G1));
-	white.append(Checker(B2));
-	white.append(Checker(D2));
-	white.append(Checker(F2));
-	white.append(Checker(H2));
-	white.append(Checker(A3));
-	white.append(Checker(C3));
-	white.append(Checker(E3));
-	white.append(Checker(G3));
-	black.append(Checker(A1));
-	black.append(Checker(C1));
-	black.append(Checker(E1));
-	black.append(Checker(G1));
-	black.append(Checker(B2));
-	black.append(Checker(D2));
-	black.append(Checker(F2));
-	black.append(Checker(H2));
-	black.append(Checker(A3));
-	black.append(Checker(C3));
-	black.append(Checker(E3));
-	black.append(Checker(G3));
+	white.append(new Checker(A1, this));
+	white.append(new Checker(C1, this));
+	white.append(new Checker(E1, this));
+	white.append(new Checker(G1, this));
+	white.append(new Checker(B2, this));
+	white.append(new Checker(D2, this));
+	white.append(new Checker(F2, this));
+	white.append(new Checker(H2, this));
+	white.append(new Checker(A3, this));
+	white.append(new Checker(C3, this));
+	white.append(new Checker(E3, this));
+	white.append(new Checker(G3, this));
+	black.append(new Checker(A1, this));
+	black.append(new Checker(C1, this));
+	black.append(new Checker(E1, this));
+	black.append(new Checker(G1, this));
+	black.append(new Checker(B2, this));
+	black.append(new Checker(D2, this));
+	black.append(new Checker(F2, this));
+	black.append(new Checker(H2, this));
+	black.append(new Checker(A3, this));
+	black.append(new Checker(C3, this));
+	black.append(new Checker(E3, this));
+	black.append(new Checker(G3, this));
 }

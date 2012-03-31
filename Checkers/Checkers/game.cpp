@@ -43,13 +43,13 @@ void Game::PossibleMove(CheckerState & ){
 
 /** Получить указатель на шашку по позиции. */
 Checker * Game::getCeckerByPosition(CheckerState & ){
-	return new Checker();
+	return new Checker(None, this);
 }
 
 /** Возможные ходы. */
-QVector<CheckerState> & Game::possibleMove(Checker & ){
-	QVector<CheckerState> * t = new QVector<CheckerState>();
-	return *t;
+QVector<CheckerState> Game::possibleMove(Checker & ){
+	QVector<CheckerState> t;
+	return t;
 }
 
 /** переместить указанную шашку */

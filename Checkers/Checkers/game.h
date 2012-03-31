@@ -54,7 +54,7 @@ private:
 	Checker * getCeckerByPosition(CheckerState & ) /*const*/;
 
 	/** Возможные ходы. */
-	QVector<CheckerState> & possibleMove(Checker & ) /*const*/;
+	QVector<CheckerState> possibleMove(Checker & ) /*const*/;
 
 	/** переместить указанную шашку */
 	void move(Checker & , CheckerState & );
