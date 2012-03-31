@@ -7,7 +7,7 @@
 /** Описывает одну шашку.
  * @anchor Василий Почкаенко.
  */
-class Checker : public QObject
+class Checker
 {
 	Q_OBJECT
 private:
@@ -17,7 +17,8 @@ private:
 	/** Дамка?*/
 	bool king;
 public:
-	explicit Checker(CheckerState position, QObject *parent = 0);
+	Checker();
+	Checker(CheckerState position);
 
 	/** Получить позицию шашки*/
 	CheckerState GetPosition() const;

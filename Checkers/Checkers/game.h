@@ -3,8 +3,8 @@
 
 #include <QObject>
 #include <QVector>
+#include "checkestate.h"
 
-class CheckerState;
 class Checker;
 class Place;
 

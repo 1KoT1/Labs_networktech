@@ -1,5 +1,6 @@
 #include "clientgame.h"
 #include "channeltoserver.h"
+#include "place.h"
 
 ClientGame::ClientGame(QObject *parent) :
 		QObject(parent)
@@ -7,22 +8,22 @@ ClientGame::ClientGame(QObject *parent) :
 }
 
 /** Отказ в перемещении шашки.*/
-void FailureMove(){
+void ClientGame::FailureMove(){
 
 }
 
 /** Изменение позиции.*/
-void ChangePlace(Place){
+void ClientGame::ChangePlace(Place){
 
 }
 
 /** Отказ от игры первым игроком.*/
-void EndOfTheGame1(){
+void ClientGame::EndOfTheGame1(){
 
 }
 
 /** Отказ от игры вторым игроком.*/
-void EndOfTheGame2(){
+void ClientGame::EndOfTheGame2(){
 
 }
 
@@ -30,6 +31,6 @@ void EndOfTheGame2(){
  *
  * Высылает сигнал со списком возможных позиций.
  */
-void PossibleMove(CheckerState){
+void ClientGame::PossibleMove(CheckerState){
 
 }

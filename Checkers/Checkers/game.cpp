@@ -1,6 +1,5 @@
 #include "game.h"
 #include "checker.h"
-#include "checkestate.h"
 #include "place.h"
 
 Game::Game(QObject *parent) :
