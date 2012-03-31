@@ -24,7 +24,7 @@ private:
 	 *
 	 * Если равен 0, значит не подключены к игре. Возможно мы — сервер.
 	 */
-	ClienGame clienGame;
+	ClienGame * clienGame;
 public:
 	explicit MainController(QObject *parent = 0);
 
