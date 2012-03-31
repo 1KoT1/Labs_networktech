@@ -3,9 +3,7 @@
 #include "clientgame.h"
 
 MainController::MainController(QObject *parent) :
-	QObject(parent), game(0), clienGame(0)
-{
-}
+	QObject(parent), game(0), clienGame(0){}
 
 /** Начать игру как сервер.*/
 void StartServer(){
