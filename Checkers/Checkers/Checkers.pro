@@ -27,7 +27,8 @@ symbian:TARGET.CAPABILITY += NetworkServices
 SOURCES += main.cpp \
     checker.cpp \
     place.cpp \
-    game.cpp
+    game.cpp \
+    clientgame.cpp
 
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
@@ -37,4 +38,5 @@ HEADERS += \
     checkestate.h \
     checker.h \
     place.h \
-    game.h
+    game.h \
+    clientgame.h
