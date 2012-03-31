@@ -1,4 +1,5 @@
 #include "clientgame.h"
+#include "channeltoserver.h"
 
 ClientGame::ClientGame(QObject *parent) :
 		QObject(parent)
