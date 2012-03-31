@@ -28,7 +28,8 @@ SOURCES += main.cpp \
     checker.cpp \
     place.cpp \
     game.cpp \
-    clientgame.cpp
+    clientgame.cpp \
+    channeltoserver.cpp
 
 # Please do not modify the following two lines. Required for deployment.
 include(qmlapplicationviewer/qmlapplicationviewer.pri)
@@ -39,4 +40,5 @@ HEADERS += \
     checker.h \
     place.h \
     game.h \
-    clientgame.h
+    clientgame.h \
+    channeltoserver.h
